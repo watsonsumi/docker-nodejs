@@ -7,9 +7,9 @@
             "cpu": 0,
             "portMappings": [
                 {
-                    "name": "3big-ui-srv-4000-tcp",
-                    "containerPort": 4000,
-                    "hostPort": 4000,
+                    "name": "3big-ui-srv-8000-tcp",
+                    "containerPort": 8000,
+                    "hostPort": 8000,
                     "protocol": "tcp",
                     "appProtocol": "http"
                 }
