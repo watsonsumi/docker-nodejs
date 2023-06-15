@@ -1,0 +1,26 @@
+name: Deploy proyect 
+on: 
+  push: 
+      branches: [ main ]
+
+env:
+  IMAGE_NAME: app-node
+
+jobs:
+  build: 
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout the repo
+        uses: actions/checkout@v2
+        with:
+          fetch-depth: 0
+      - name: list files
+        run: ls -l
+
+      - name: Build the Docker image
+       run: docker build -t ${{env.IMAGE_NAME}}:1.0.0 .
+       
+      - name: Ckeck image build
+        run: docker image ls
+      
+        
