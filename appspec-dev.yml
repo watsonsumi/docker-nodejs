@@ -6,4 +6,4 @@ Resources:
               TaskDefinition: "arn:aws:ecs:us-east-1:596059741778:task-definition/3big-ui-srv:2"
               LoadBalancerInfo:
                   ContainerName: "3big-ui-srv"
-                  ContainerPort: 4000
+                  ContainerPort: 8000
